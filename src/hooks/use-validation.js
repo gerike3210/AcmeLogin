@@ -16,7 +16,8 @@ import { AuthActions } from "../store/auth-slice";
 
 const EMAIL_FORMAT =
     /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-const PASSWORD_FORMAT = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{4,}$/;
+const PASSWORD_FORMAT =
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)|(?=.*?[#?!@$%^&*-])[a-zA-Z\d]{4,}$/;
 
 const MIN_LENGTH_FORMAT = /(?=.{4,}$)/;
 const LOWERCASE_FORMAT = /(?=.*[a-z])/;
