@@ -1,0 +1,115 @@
+.container-input {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.container-input input,
+.container-input label {
+    display: block;
+}
+
+.container-input label {
+    color: #a8a8a8;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 22px 0 10px 0;
+}
+
+.container-input input {
+    border: none;
+    border-bottom: 1px solid #a8a8a8;
+    color: #757575;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.container-input input:focus {
+    border-bottom: 1px solid #4a90e2;
+    outline: none;
+}
+
+.container-input label:focus-within {
+    color: #4a90e2;
+}
+
+.focus {
+    color: #4a90e2 !important;
+    margin-bottom: 3px !important;
+}
+
+.invalid {
+    color: red !important;
+}
+
+.invalid input {
+    border-bottom: 1px solid red !important;
+}
+
+.container-remember {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    justify-content: start;
+}
+
+.container-remember label {
+    color: #a1a1a1;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.container-remember input[type="checkbox"] {
+    display: none;
+}
+
+.container-remember input[type="checkbox"]:checked + .checkbox::after {
+    transform: scale(1);
+}
+
+.checkbox {
+    width: 0.8em;
+    height: 0.8em;
+    border: 1px solid #a8a8a8;
+    border-radius: 50%;
+}
+
+.checkbox::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #4a90e2;
+    border-radius: 50%;
+    transform: scale(0);
+}
+
+.password-features {
+    bottom: 0;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+}
+
+.container-faeye {
+    align-self: center;
+}
+
+.container-btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+.btn {
+    background-color: #4a90e2;
+}
+
+.inactive {
+    opacity: 0;
+}
+
+.active {
+    opacity: 100;
+}

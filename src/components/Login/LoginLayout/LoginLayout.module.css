@@ -1,0 +1,14 @@
+.container-layout {
+    background-color: #f7f7f7;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    margin: 90px 0;
+    width: 390px;
+    height: 370px;
+    padding: 5%;
+}

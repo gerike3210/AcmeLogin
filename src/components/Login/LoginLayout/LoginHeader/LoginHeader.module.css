@@ -1,0 +1,16 @@
+.title-welcome {
+    color: #757575;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 14px;
+}
+.title-under {
+    color: #a1a1a1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    margin-bottom: 35px;
+}

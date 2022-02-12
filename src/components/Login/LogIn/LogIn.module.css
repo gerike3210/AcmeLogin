@@ -1,0 +1,31 @@
+.container-switch {
+    background: url("../../../assets/background.png");
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.container-content {
+    width: 400px;
+    margin: 30px auto 0 auto;
+}
+
+.container-content h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    line-height: 44px;
+    margin-top: 30px;
+}
+
+.container-content h4 {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.container-content button {
+    margin-top: 15px;
+    background-color: transparent;
+    border: 2px solid #fff;
+}

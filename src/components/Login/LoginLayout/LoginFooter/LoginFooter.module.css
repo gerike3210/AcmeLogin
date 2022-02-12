@@ -1,0 +1,40 @@
+.container-footer {
+    position: absolute;
+    left: 0;
+    left: 100px;
+    bottom: 45px;
+    transform: translate(0, 50%);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.text-normal,
+.text-bold {
+    font-size: 12px;
+    color: #a1a1a1;
+}
+
+.text-normal {
+    line-height: 15px;
+}
+
+.text-bold {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    color: #a1a1a1;
+}
+
+.dots {
+    display: flex;
+    gap: 4px;
+    transform: translate(0, 50%);
+}
+.dot {
+    width: 4px;
+    height: 4px;
+    background-color: #a1a1a1;
+    border: none;
+    border-radius: 50%;
+}
