@@ -7,15 +7,15 @@
 }
 
 .container-content {
-    width: 400px;
-    margin: 30px auto 0 auto;
+    width: 40rem;
+    margin: 3rem auto 0 auto;
 }
 
 .container-content h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 30px;
     line-height: 44px;
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .container-content h4 {
@@ -25,7 +25,7 @@
 }
 
 .container-content button {
-    margin-top: 15px;
+    margin-top: 1.5rem;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 0.2rem solid #fff;
 }

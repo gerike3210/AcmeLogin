@@ -1,11 +1,11 @@
 .container-footer {
     position: absolute;
     left: 0;
-    left: 100px;
-    bottom: 45px;
+    left: 10rem;
+    bottom: 4.5rem;
     transform: translate(0, 50%);
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -28,12 +28,12 @@
 
 .dots {
     display: flex;
-    gap: 4px;
+    gap: 0.4rem;
     transform: translate(0, 50%);
 }
 .dot {
-    width: 4px;
-    height: 4px;
+    width: 0.4rem;
+    height: 0.4rem;
     background-color: #a1a1a1;
     border: none;
     border-radius: 50%;
