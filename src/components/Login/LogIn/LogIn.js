@@ -29,7 +29,6 @@ const LogIn = ({ className }) => {
         <>
             <div className={`${classes["container-login"]} ${className}`}>
                 <div className={classes["container-content"]}>
-                    {/* <img src={acme} /> */}
                     <div className={classes["container-img"]} />
                     <h2>Do you already have an account?</h2>
                     <h4>

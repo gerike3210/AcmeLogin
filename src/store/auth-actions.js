@@ -29,11 +29,22 @@ export const sendLoginData = (email, password) => {
             if (responseData.result.error) {
                 throw new Error(responseData.result.error);
             }
+            dispatch(
+                AuthActions.setResponseMessage({
+                    type: "success",
+                    message: "Successful login",
+                })
+            );
         };
         try {
-            const data = await sendRequest();
+            await sendRequest();
         } catch (error) {
-            dispatch(AuthActions.setLoginError(error.message));
+            dispatch(
+                AuthActions.setResponseMessage({
+                    type: "error",
+                    message: error.message,
+                })
+            );
         }
     };
 };

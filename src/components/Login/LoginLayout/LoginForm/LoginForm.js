@@ -1,12 +1,13 @@
 import { useState } from "react";
-import useValidation from "../../../../hooks/use-validation";
-import Button from "../../../UI/Button/Button";
-import PasswordStrength from "./PasswordStrenght/PasswordStrength";
-
-import classes from "./LoginForm.module.css";
-import FaEye from "./FaEye/FaEye";
 import { useDispatch, useSelector } from "react-redux";
 import { AuthActions } from "../../../../store/auth-slice";
+import useValidation from "../../../../hooks/use-validation";
+
+import Button from "../../../UI/Button/Button";
+import PasswordStrength from "./PasswordStrenght/PasswordStrength";
+import FaEye from "./FaEye/FaEye";
+
+import classes from "./LoginForm.module.css";
 
 let isFormSubmit = false;
 

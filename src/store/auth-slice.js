@@ -8,7 +8,7 @@ const AuthSlice = createSlice({
         password: "",
         isValidEmail: null,
         isValidPassword: null,
-        loginError: null,
+        responseMessage: {},
         isRemember: false,
     },
     reducers: {
@@ -27,8 +27,11 @@ const AuthSlice = createSlice({
         setIsValidPassword(state, action) {
             state.isValidPassword = action.payload;
         },
-        setLoginError(state, action) {
-            state.loginError = action.payload;
+        setResponseMessage(state, action) {
+            state.responseMessage = {
+                type: action.payload.type,
+                message: action.payload.message,
+            };
         },
         setIsRemember(state) {
             state.isRemember = !state.isRemember;

@@ -1,0 +1,21 @@
+.container {
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8rem;
+    padding: 1rem;
+    position: absolute;
+    text-align: center;
+    top: 6%;
+    width: 65%;
+}
+.error {
+    background-color: #ffa4a6a9;
+    border: 0.1rem solid #cd4146;
+    color: #cd4146;
+}
+
+.success {
+    border: 0.1rem solid #3ea16b;
+    background-color: #87f1b0b7;
+    color: #3ea16b;
+}

@@ -1,10 +1,6 @@
 .container-page {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%); */
     transform: translate(0, 25%);
     width: 120rem;
 }
