@@ -7,7 +7,6 @@ const LoginPage = () => {
     return (
         <div className={classes["container-page"]}>
             <LoginLayout />
-
             <LogIn className={classes["login"]} />
         </div>
     );

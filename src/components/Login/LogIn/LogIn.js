@@ -30,7 +30,8 @@ const LogIn = ({ className }) => {
         <>
             <div className={`${classes["container-switch"]} ${className}`}>
                 <div className={classes["container-content"]}>
-                    <img src={acme} />
+                    {/* <img src={acme} /> */}
+                    <div className={classes["container-img"]} />
                     <h2>Do you already have an account?</h2>
                     <h4>
                         That's awesome! You can login by clicking on the button

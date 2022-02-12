@@ -6,21 +6,28 @@
     color: #fff;
 }
 
+.container-img {
+    background: url(../../../assets/acme.png);
+    width: 91px;
+    height: 53px;
+}
+
 .container-content {
     width: 40rem;
     margin: 3rem auto 0 auto;
+    position: relative;
 }
 
 .container-content h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 30px;
-    line-height: 44px;
+    font-size: 3rem;
+    line-height: 4.4rem;
     margin-top: 3rem;
 }
 
 .container-content h4 {
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 1.4rem;
+    line-height: 3rem;
     font-weight: 400;
 }
 
@@ -28,4 +35,43 @@
     margin-top: 1.5rem;
     background-color: transparent;
     border: 0.2rem solid #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .container-switch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-img {
+        background: url(../../../assets/acme@2x.png);
+        width: 182px;
+        height: 106px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 70% !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-content {
+        margin: 0 auto;
+    }
+
+    .container-img {
+        background: url(../../../assets/acme@3x.png);
+        width: 273px;
+        height: 159px;
+        margin: 0 auto;
+    }
+
+    .container-content button {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
