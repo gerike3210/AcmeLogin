@@ -2,24 +2,21 @@ import { AuthActions } from "./auth-slice";
 
 export const sendLoginData = (email, password) => {
     return async (dispatch) => {
-        const sendRequest = async () => {
-            const response = await fetch(
-                "https://us-central1-ria-server-b1103.cloudfunctions.net/authenticate",
-                {
-                    method: "POST",
-                    headers: {
-                        "Accept-Encoding": "application/json",
-                        "Content-Type": "application/json; charset=utf-8",
-                    },
+        const sendRequest = async (url) => {
+            const response = await fetch(url, {
+                method: "POST",
+                headers: {
+                    "Accept-Encoding": "application/json",
+                    "Content-Type": "application/json; charset=utf-8",
+                },
 
-                    body: JSON.stringify({
-                        data: {
-                            email: email,
-                            password: password,
-                        },
-                    }),
-                }
-            );
+                body: JSON.stringify({
+                    data: {
+                        email: email,
+                        password: password,
+                    },
+                }),
+            });
 
             if (!response.ok) {
                 throw new Error("Error while fetching data");
@@ -37,7 +34,9 @@ export const sendLoginData = (email, password) => {
             );
         };
         try {
-            await sendRequest();
+            await sendRequest(
+                "https://us-central1-ria-server-b1103.cloudfunctions.net/authenticate"
+            );
         } catch (error) {
             dispatch(
                 AuthActions.setResponseMessage({

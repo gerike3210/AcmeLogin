@@ -11,10 +11,17 @@ const LogIn = ({ className }) => {
     const enteredEmail = useSelector((state) => state.auth.email);
     const enteredPassword = useSelector((state) => state.auth.password);
     const isRemember = useSelector((state) => state.auth.isRemember);
+    const rememberedEmail = localStorage.getItem("email");
+    const rememberedPassword = localStorage.getItem("password");
 
     const loginHandler = () => {
         AuthActions.setType("login");
-        dispatch(sendLoginData(enteredEmail, enteredPassword));
+        dispatch(
+            sendLoginData(
+                rememberedEmail || enteredEmail,
+                rememberedPassword || enteredPassword
+            )
+        );
         dispatch(AuthActions.setType("login"));
 
         if (isRemember) {
