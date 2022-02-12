@@ -4,9 +4,10 @@
     ~ lowercase letter
     ~ uppercase letter
     ~ number
+    ~ special characters
 
 * Accept:
-    ~ min 2 condition
+    ~ min 4 condition
 */
 
 import { useState } from "react";
