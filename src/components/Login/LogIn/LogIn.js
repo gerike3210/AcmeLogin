@@ -3,7 +3,6 @@ import { sendLoginData } from "../../../store/auth-actions";
 import { AuthActions } from "../../../store/auth-slice";
 
 import Button from "../../UI/Button/Button";
-import acme from "../../../assets/acme.png";
 
 import classes from "./LogIn.module.css";
 
@@ -28,7 +27,7 @@ const LogIn = ({ className }) => {
 
     return (
         <>
-            <div className={`${classes["container-switch"]} ${className}`}>
+            <div className={`${classes["container-login"]} ${className}`}>
                 <div className={classes["container-content"]}>
                     {/* <img src={acme} /> */}
                     <div className={classes["container-img"]} />

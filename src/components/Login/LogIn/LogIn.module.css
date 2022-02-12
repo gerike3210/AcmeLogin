@@ -1,4 +1,4 @@
-.container-switch {
+.container-login {
     background: url("../../../assets/background.png");
     background-size: cover;
     background-position: 0;
@@ -38,7 +38,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .container-switch {
+    .container-login {
         display: flex;
         justify-content: center;
         align-items: center;
